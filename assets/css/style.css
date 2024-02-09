@@ -106,6 +106,24 @@ footer h2 {
   margin-top: auto;
 }
 
+.boxes {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  grid-area: boxes;
+}
+
+.boxes button {
+  background-color: white;
+  font-size: 3vw;
+  width: 5vw;
+  height: 4vh;
+  color: #214e34;
+  font-size: 2vw;
+  font-weight: bold;
+  border-radius: 0;
+}
+
 @media (max-width: 576px) {
   .lista {
     display: none;
@@ -118,6 +136,7 @@ footer h2 {
     grid-template-areas:
       "nav search search search"
       "nav main main main"
+      "nav boxes boxes boxes"
       "footer footer footer footer";
     height: 100vh;
   }
